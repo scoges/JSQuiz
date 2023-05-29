@@ -33,7 +33,7 @@ const all_answer = document.querySelectorAll('.answer');
 
 let index = 0;
 let score = 0;
-//get the getSelected answer
+
 function getSelected() {
   let ans = undefined;
   all_answer.forEach((el) => {
@@ -43,13 +43,13 @@ function getSelected() {
   });
   return ans;
 }
-//disselect all answer
+
 function deselectans() {
   all_answer.forEach((el) => {
     el.checked = false;
   });
 }
-//load the quiz data
+
 function getquiz() {
   deselectans();
   question.innerText = questions[index].question;
@@ -57,14 +57,30 @@ function getquiz() {
   b.innerText = questions[index].b;
   c.innerText = questions[index].c;
 }
-//move forward the quiz
+var timeLeft = 45;
+var elem = document.getElementById("timer");
+var timerId = setInterval(countdown, 1000);
+
+function countdown(){
+    if (timeLeft == -1) {
+        clearTimeout(timerId);
+        endquiz();
+    } else {
+        elem.innerHTML = timeLeft + ' seconds remaining';
+        timeLeft--;
+    }
+}
+
+function endquiz() {
+    alert("Hi");
+}
 function startquiz() {
   btn.addEventListener('click', () => {
     let ans = getSelected();
     if (ans) {
       if (ans == questions[index].correct) {
         score++;
-      }
+      } else{timeLeft = timeLeft - 5}
     }
     index++;
     if (index < questions.length) {
@@ -75,5 +91,10 @@ function startquiz() {
     }
   });
 }
+
+
+
+
+
 getquiz();
 startquiz();
