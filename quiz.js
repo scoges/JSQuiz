@@ -14,6 +14,37 @@ const questions = [
       correct: "a"
   },
   
+  {
+    question: "Javascript was originally created for what web browser?",
+    a: "Google",
+    b: "Netscape",
+    c: "AOL",
+    correct: "b"
+},
+
+{
+    question: "Javascripts programming with promises is reffered to as...",
+    a: "Ask/Wait",
+    b: "Demand/Hold",
+    c: "Async/Await",
+    correct: "c"
+},
+
+{
+    question: "Javascript is used on what percentage of websites?",
+    a: "90%",
+    b: "50%",
+    c: "75%",
+    correct: "a"
+},
+
+{
+    question: "Javascript was originally named what?",
+    a: "coffeescript",
+    b: "livescript",
+    c: "printscript",
+    correct: "b"
+},
 ];
 
 const questionElem = document.getElementById('question');
