@@ -23,6 +23,15 @@ h1 {
   background-color: #174444;
   color: #fffbfb;
 }
+
+h2{
+  font-size: 26px;
+  background-color: #36aaaa;
+  color: #fffbfb;
+  padding: 200;
+  margin-left: 800px;
+  margin-right: 800px;
+}
 ul{
  
   font-family: Arial, sans-serif;
