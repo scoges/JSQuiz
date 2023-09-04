@@ -1,20 +1,41 @@
-body {
+.main {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #469cbe;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  font-size: 36px;
-  color: #333;
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(retroback.png);
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
+.box{
+  font-family: Arial, sans-serif;
+  background-color: #4fc4c4;
+}
+h1 {
+  font-size: 36px;
+  background-color: #174444;
+  color: #fffbfb;
+}
+ul{
+ 
+  font-family: Arial, sans-serif;
+  background-color: #4fc4c4;
+  text-align: left;
+ color: #f7f7f7;
+  margin-left: 900px;
+  padding: 0;
+}
 #question {
   font-size: 24px;
   margin: 20px 0;
-  color: #333;
+  color: #ffffff;
 }
 
 .answer {
@@ -48,7 +69,7 @@ button {
 #timer {
   font-size: 18px;
   margin-top: 10px;
-  color: #333;
+  color: #fffcfc;
 }
 .Highboard {
     list-style: none;
